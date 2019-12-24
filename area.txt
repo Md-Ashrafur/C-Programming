@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+float area,radius;
+scanf("%f",&area);
+radius=sqrt(area/3.1416);
+printf("%f",radius);
+return 0;
+}
+

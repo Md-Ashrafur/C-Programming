@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int i, j, n,c, x[100];;
+    scanf("%d",&n);
+    for(i=0; i<n; i++)
+    {
+        scanf("%d",&x[i]);
+    }
+    c=0;
+    for(i=0; i<n; i++)
+    {
+        for(j=(i+1); j<n; j++)
+        {
+            if(x[i]+x[j]>9)
+            {
+                c++;
+            }
+        }
+    }
+    printf("%d pairs summation is greater than 10", c);
+}
+

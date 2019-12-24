@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float gpa,cgpa,cr,cr1,cr2,cr3,gpa1,gpa2,gpa3;
+    scanf("%f%f%f%f%f%rf",&gpa1,&gpa2,&gpa3,&cr1,&cr2,&cr3);
+    cgpa=(gpa1*cr1+gpa2*cr2+gpa3*cr3)/(cr1+cr2+cr3);
+    if(cgpa<1)
+    {
+        printf("Dismissed");
+    }
+    else if(cgpa>=1&&cgpa<2)
+    {
+        printf("Trouble");
+    }
+    else if(cgpa>=2&&cgpa<=3)
+    {
+        printf("Average");
+    }
+    else if(cgpa>3)
+    {
+        printf("Better");
+    }
+    return 0;
+}
+

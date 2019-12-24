@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    int i, j, n,c, x[100], d;
+    scanf("%d",&n);
+    for(i=0; i<n; i++)
+    {
+        scanf("%d",&x[i]);
+    }
+    d=0;
+    for(i=0; i<n; i++)
+    {
+        c=0;
+        for(j=(i+1); j<n; j++)
+        {
+            if(x[i]>x[j])
+            {
+                c++;
+            }
+        }
+        if(c>3)
+        {
+            d++;
+        }
+    }
+    printf("%d numbers are greater than at least 3 number", d);
+}
+

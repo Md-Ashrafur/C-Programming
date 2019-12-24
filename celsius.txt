@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<math.h>
+int main(){
+float C,K,F,R,D,N,Re,Ro;
+scanf("%f",&C);
+F=C*(9.00/5.00)+32;
+K=C+273.15;
+R=(C+273.15)*(9.00/5.00);
+D=(100-C)*(3.00/2.00);
+N=C*(33.00/100.00);
+Re=C*(4.00/5.00);
+Ro=C*(21.00/40.00)+7.5;
+printf("The value of Fahrenheit is %f F\nThe value of Kelvin is %f K\nThe value of Rankine is %f R\nThe value of Delise is %f D\nThe value of Newton is %f N\nThe value of Reaumur is %f Re\nThe value of Romer is %f Ro",F,K,R,D,N,Re,Ro);
+return 0;
+}
